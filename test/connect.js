@@ -8,8 +8,8 @@ var observables = [];
 
 test('create connections', function(t) {
   t.plan(1);
-  connections[0] = new RTCPeerConnection({ iceServers: freeice() });
-  connections[1] = new RTCPeerConnection({ iceServers: freeice() });
+  connections[0] = new RTCPeerConnection({ iceServers: [] });
+  connections[1] = new RTCPeerConnection({ iceServers: [] });
   t.equal(connections.length, 2);
 });
 
@@ -62,6 +62,7 @@ test('create answer', function(t) {
     }
 
     stop = observables[1].gathered(function(gathered) {
+      console.log(observables[1]());
       stop();
       t.ok(gathered);
     });
