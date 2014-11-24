@@ -62,7 +62,6 @@ test('create answer', function(t) {
     }
 
     stop = observables[1].gathered(function(gathered) {
-      console.log(observables[1]());
       stop();
       t.ok(gathered);
     });
