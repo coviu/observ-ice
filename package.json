@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/rtc-io/observ-ice/issues"
   },
-  "homepage": "https://github.com/rtc-io/observ-ice"
+  "homepage": "https://github.com/rtc-io/observ-ice",
+  "dependencies": {
+    "observ": "^0.2.0",
+    "observ-array": "^3.1.0",
+    "observ-struct": "^6.0.0"
+  },
+  "devDependencies": {
+    "tape": "^3.0.3"
+  }
 }
