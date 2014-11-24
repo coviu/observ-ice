@@ -24,12 +24,17 @@ test('create offer', function(t) {
   t.plan(2);
 
   function monitorIce() {
-    var stop = observables[0].gathered(function(gathered) {
+    var stop;
+
+    t.pass('local description set, monitoring ice');
+    if (observables[0].gathered()) {
+      return t.pass('gathered');
+    }
+
+    stop = observables[0].gathered(function(gathered) {
       stop();
       t.ok(gathered);
     });
-
-    t.pass('local description set, monitoring ice');
   }
 
   connections[0].createDataChannel('test');
@@ -49,12 +54,17 @@ test('create answer', function(t) {
   }
 
   function monitorIce() {
-    var stop = observables[1].gathered(function(gathered) {
+    var stop;
+
+    t.pass('local description set, monitoring ice');
+    if (observables[1].gathered()) {
+      return t.pass('gathered');
+    }
+
+    stop = observables[1].gathered(function(gathered) {
       stop();
       t.ok(gathered);
     });
-
-    t.pass('local description set, monitoring ice');
   }
 
   connections[1].setRemoteDescription(connections[0].localDescription, createAnswer, t.fail);
