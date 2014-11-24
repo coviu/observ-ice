@@ -1,0 +1,24 @@
+{
+  "name": "observ-ice",
+  "version": "1.0.0",
+  "description": "Monitor the icecandidate gathering process of an RTCPeerConnection using observables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rtc-io/observ-ice.git"
+  },
+  "keywords": [
+    "webrtc",
+    "rtc.io",
+    "observ"
+  ],
+  "author": "Damon Oehlman <damon.oehlman@nicta.com.au>",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/rtc-io/observ-ice/issues"
+  },
+  "homepage": "https://github.com/rtc-io/observ-ice"
+}
