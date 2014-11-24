@@ -2,6 +2,17 @@ var ObservStruct = require('observ-struct');
 var ObservArray = require('observ-array');
 var Observ = require('observ');
 
+/**
+  # observ-ice
+
+  An observable [structure](https://github.com/Raynos/observ-struct) for the
+  ice candidates and gathering state of an `RTCPeerConnection`.
+
+  ## Example Usage
+
+  To be completed.
+
+**/
 module.exports = function(pc) {
   var gathered = Observ(false);
   var candidates = ObservArray([]);

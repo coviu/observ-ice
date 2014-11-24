@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "Monitor the icecandidate gathering process of an RTCPeerConnection using observables",
   "main": "index.js",
+  "stability": "experimental",
   "scripts": {
-    "test": "testling -x ./.travis/start-$BROWSER.sh"
+    "test": "testling -x ./.travis/start-$BROWSER.sh",
+    "gendocs": "gendocs > README.md"
   },
   "repository": {
     "type": "git",
