@@ -35,7 +35,12 @@ module.exports = function(pc) {
     gathered.set(true);
   }
 
-  pc.addEventListener('icecandidate', handleCandidate);
+  if (typeof pc.addEventListener == 'function') {
+    pc.addEventListener('icecandidate', handleCandidate);
+  }
+  else {
+    pc.onicecandidate = handleCandidate;
+  }
 
   return ObservStruct({
     candidates: candidates,
