@@ -1,6 +1,6 @@
 {
   "name": "observ-ice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Monitor the icecandidate gathering process of an RTCPeerConnection using observables",
   "main": "index.js",
   "stability": "experimental",
