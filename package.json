@@ -31,7 +31,7 @@
   "devDependencies": {
     "freeice": "^2.1.1",
     "rtc-core": "^4.0.0",
-    "tape": "^3.0.3",
+    "tape": "^4.0.0",
     "testling": "^1.7.1"
   },
   "testling": {
