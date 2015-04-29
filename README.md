@@ -6,7 +6,7 @@ ice candidates and gathering state of an `RTCPeerConnection`.
 
 [![NPM](https://nodei.co/npm/observ-ice.png)](https://nodei.co/npm/observ-ice/)
 
-[![Build Status](https://img.shields.io/travis/rtc-io/observ-ice.svg?branch=master)](https://travis-ci.org/rtc-io/observ-ice) [![experimental](https://img.shields.io/badge/stability-experimental-red.svg)](https://github.com/dominictarr/stability#experimental) 
+[![Build Status](https://api.travis-ci.org/coviu/observ-ice.svg?branch=master)](https://travis-ci.org/coviu/observ-ice) [![experimental](https://img.shields.io/badge/stability-experimental-red.svg)](https://github.com/dominictarr/stability#experimental) 
 [![rtc.io google group](http://img.shields.io/badge/discuss-rtc.io-blue.svg)](https://groups.google.com/forum/#!forum/rtc-io)
 
 
@@ -19,7 +19,7 @@ To be completed.
 
 ### Apache 2.0
 
-Copyright 2014 National ICT Australia Limited (NICTA)
+Copyright 2015 National ICT Australia Limited (NICTA)
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
